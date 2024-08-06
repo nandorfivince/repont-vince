@@ -13,31 +13,38 @@
             margin: 0;
             background-color: #ffffff;
             font-family: Arial, sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .container {
             text-align: center;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         img {
-            max-width: 100%;
+            max-width: 50%; /* Csökkentett képméret */
             height: auto;
         }
         h1 {
-            font-size: 2em;
+            font-size: 1.5em; /* Csökkentett betűméret */
             margin-bottom: 10px;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1em; /* Csökkentett betűméret */
             margin: 10px 0;
         }
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.5em;
+                font-size: 1.2em; /* Mobil nézetben is kisebb betűméret */
             }
             p {
-                font-size: 1em;
+                font-size: 0.9em; /* Mobil nézetben is kisebb betűméret */
+            }
+            img {
+                max-width: 80%; /* Mobil nézetben nagyobb képméret */
             }
         }
     </style>
